@@ -1,0 +1,82 @@
+/* Skills Section Styles */
+
+.skills {
+  margin-top: 2rem;
+}
+
+.section__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Skill Categories */
+.skills__category {
+  margin-bottom: 2rem;
+}
+
+.skills__category-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Rainbow text effect */
+.rainbow-text-animated {
+  background: linear-gradient(
+    270deg,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet,
+    red
+  );
+  background-size: 1500%;
+  animation: rainbow 18s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Skills List */
+.skills__list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills__list-item {
+  margin: 0.5em;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.skills__list-item:hover {
+  color: #0078d7; /* Accent color on hover */
+  cursor: default;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills__category-title {
+    font-size: 1.25rem;
+  }
+}
