@@ -11,8 +11,8 @@ const about = {
   description:
     // Expanded description incorporating details from resume summary and education
     'M.S. in Information Science candidate (GPA: 3.95/4.0) at University of Wisconsin-Madison, specializing in Data Analytics, Machine Learning, and Cloud Computing. Passionate about leveraging data-driven insights for strategic problem-solving. Recognized as a Chancellor\'s Scholar (2025) and inducted into the National Society of Leadership and Success. Combines analytical rigor with creativity, demonstrated through visualizing music data with Tableau and developing AI-powered platforms. Continuously enhancing skills in cloud technologies (AWS, Azure, Snowflake) and Data Engineering. Proven ability to deliver impactful results in Business Analyst roles, improving operational efficiency and driving revenue growth. Quick learner and collaborative team player with strong technical proficiency and a curiosity for innovative tech applications.',
-  // NOTE: Replace 'YOUR_NEW_RESUME_LINK_HERE' with the actual URL to your resume PDF
-  resume: 'https://drive.google.com/file/d/13yGccHtQa6l8f4hNelCS9uMOmf4LEhKI/view?usp=sharing', // Placeholder - needs your updated link
+  // Resume link updated from user input
+  resume: 'https://drive.google.com/file/d/13yGccHtQa6l8f4hNelCS9uMOmf4LEhKI/view?usp=sharing',
   social: {
     // Links from original file, assuming they are correct
     linkedin: 'https://www.linkedin.com/in/harshpmehta/', // also confirms linkedin
@@ -54,7 +54,7 @@ const experience = [
       'Startup Analysis', 'Investment Recommendation', 'Python', 'Numpy', 'Pandas',
       'Snowflake', 'ETL', 'SQL', 'Oracle', 'Data Modeling', 'Databricks', 'Excel Macros', 'Data Management'
     ],
-  },
+  }, // Correct comma was already here
   {
     name: 'Beats by Dre | Business Analyst Branding Strategy Extern',
     description:
@@ -62,7 +62,7 @@ const experience = [
     date: 'May 2024 - Jun 2024', // Resume date
     location: 'Remote', // Added location
     stack: [
-      'Competitive Analysis', 'Pricing Strategy', 'Market Research', 'Consumer Insights', 'Python', 'NLP',
+      'Competitive Analysis', 'Pricing Strategy', 'Market Research', 'Consumer Insights', 'Python', 'NLP', // Removed '(Gen Z)' for simplicity if needed
       'Data Visualization', 'Tableau', 'Power BI', 'Strategic Recommendations', 'Microsoft Office'
     ],
   },
@@ -90,7 +90,7 @@ const experience = [
   },
 ]
 
-// Projects section now includes items from resume AND the new items provided
+// Projects section includes items from resume AND the new items provided
 const projects = [
   {
     name: 'UW Transportation Services Campus Parking Efficiency Project',
@@ -100,7 +100,7 @@ const projects = [
       'Data Analysis', 'Python', 'SQL', 'Snowflake', 'ETL', 'Data Mining', 'Clustering',
       'Predictive Modeling', 'Data Visualization', 'Tableau / Power BI' // Inferred tools based on skills & context
     ],
-     sourceCode: 'https://github.com/HarshMehta9000/LIS620Parking'
+    sourceCode: 'https://github.com/HarshMehta9000/LIS620Parking' // Link from user input
   },
   {
     name: 'MSBA Financial Group Cloud-Native Data Architecture Project',
@@ -110,46 +110,44 @@ const projects = [
       'AWS', 'S3', 'AWS Glue', 'ETL', 'AWS Redshift', 'Data Warehousing', 'Data Pipeline',
       'Machine Learning', 'SageMaker Canvas', 'Exploratory Data Analysis (EDA)', 'Financial Analysis', 'Risk Prediction'
     ],
-    // sourceCode: 'YOUR_PROJECT_LINK_HERE' // Add link if available
+    // sourceCode: 'YOUR_PROJECT_LINK_HERE' // No link provided by user
   },
   {
     name: 'Ensemble AI-Powered Venue Booking Platform',
     description:
       'Conceptualized and built an AI platform for venue booking with real-time syncing and secure transactions. Reduced average booking time by 40% via intelligent matching algorithms. Integrated secure payments and calendar sync. Selected for NSF I-Corps program for commercial scaling. Used ML for optimized recommendations, increasing conversion rates by 35%.',
     stack: [
-      'AI', 'Machine Learning', 'Entrpeneur', 'Real-time Systems', 'Secure Payments',
+      'AI', 'Machine Learning', 'Entrepreneurship', 'Real-time Systems', 'Secure Payments', // Corrected 'Entrpeneur'
       'Calendar Integration', 'Recommendation Systems', 'NSF I-Corps'
     ],
-     sourceCode: 'https://drive.google.com/file/d/1ws93y8MjzvBhUy26JfZQ59z70GfCiemQ/view'
+    sourceCode: 'https://drive.google.com/file/d/1ws93y8MjzvBhUy26JfZQ59z70GfCiemQ/view' // Link from user input
   },
-  // === NEW ITEMS ADDED BELOW ===
   {
     name: 'Hard Drive Data Extraction Tool',
     description:
       'Created a streamlined tool converting hard drive data to JSON with advanced analytics. Simplifies extraction for non-technical users, standardizes outputs for analytics, reduces processing time by 60%, and saves significantly on electricity, computing, and cloud costs. Demonstrates ability to identify market inefficiencies and develop user-friendly tech products.',
-    stack: [ // Inferred stack
-      'Data Extraction', 'JSON', 'Python', 'Javascript', 'PostgreSQL' 'Data Management', 'Tool Development', 'Data Standardization', 'Process Optimization'
+    stack: [
+      'Data Extraction', 'JSON', 'Python', 'Javascript', 'PostgreSQL', // <--- COMMA ADDED HERE
+      'Data Management', 'Tool Development', 'Data Standardization', 'Process Optimization'
     ],
-    // NOTE: Replace placeholders with actual links
-    livePreview: 'https://melodic-kringle-9b3415.netlify.app/', // Placeholder for [LINK: JSON Explorer site]
-    sourceCode: 'https://drive.google.com/file/d/1kFJuTdfmkWOjlnl02XlAT6nJLO8wHTPe/view', // Placeholder for [LINK: Screenshots] - Using sourceCode field, adjust if needed
+    livePreview: 'https://melodic-kringle-9b3415.netlify.app/', // Link from user input
+    sourceCode: 'https://drive.google.com/file/d/1kFJuTdfmkWOjlnl02XlAT6nJLO8wHTPe/view', // Link from user input
   },
   {
     name: 'Research: Job Posting Analytics on Twitter',
     description:
       'Co-authoring a research paper for peer-reviewed publication. Analyzes 100,000+ job postings using data mining and NLP techniques to reveal insights into hiring trends across industries and regions.',
-    stack: [ // Inferred stack
+    stack: [
       'Research', 'Academic Writing', 'Data Mining', 'NLP', 'Twitter API', 'Job Market Analysis', 'Trend Analysis'
     ],
-    // NOTE: Replace placeholder with actual link
-    livePreview: 'https://docs.google.com/document/d/1dZR5oPDQ_W768aWHTl-36N0I0TuC41oIPV4Xl22kiD8/edit?tab=t.jemhm1prcbcn', // Placeholder for [LINK: Research Paper]
+    livePreview: 'https://docs.google.com/document/d/1dZR5oPDQ_W768aWHTl-36N0I0TuC41oIPV4Xl22kiD8/edit?tab=t.jemhm1prcbcn', // Link from user input
   },
   {
     name: 'Creative Application: MIDI to CSV Data Tool',
     description:
       'Developed specialized code that transforms MIDI music files into analytical CSV datasets, capturing chord progressions, note structures, tempo variations, and instrumentation. This highlights technical capability applied to creative domains.',
-    stack: [ // Inferred stack
-      'MIDI Processing', 'Data Transformation', 'CSV', 'Music Information Retrieval', 'Python' // Assuming Python
+    stack: [
+      'MIDI Processing', 'Data Transformation', 'CSV', 'Music Information Retrieval', 'Python'
     ],
     // No links provided for this one
   },
@@ -157,13 +155,12 @@ const projects = [
     name: 'Portfolio Highlights Summary', // Using project structure for this content
     description:
       'Technical portfolio features ML and text mining projects. Creative work includes production for campus music events and analytical platforms for film/music criticism. These demonstrate multidisciplinary thinking and translating complex concepts across domains.',
-    stack: [ // Representing linked items
+    stack: [
       'Machine Learning', 'Text Mining', 'Music Production', 'Film Analysis', 'Music Analysis', 'Portfolio Development'
     ],
-    // NOTE: Replace placeholders with actual links
-    livePreview: 'https://gentle-sorbet-624f58.netlify.app/', // [LINK: What I learnt in Graduate School Portfolio Website]
-    sourceCode: 'https://superlative-meringue-134258.netlify.app/', // [LINK: Portfolio of Campus Music Events]
-    // livePreview: 'YOUR_MOVIE_REVIEW_PLATFORM_LINK_HERE', // You might need another field or adjust how links are displayed if you have >2 per project. Using livePreview for the first link here.
+    livePreview: 'https://gentle-sorbet-624f58.netlify.app/', // Link from user input
+    sourceCode: 'https://superlative-meringue-134258.netlify.app/', // Link from user input
+    // Note: Add movie review platform link here if desired, might require ProjectContainer component changes
   },
 ]
 
@@ -182,8 +179,8 @@ const skills = [
 ]
 
 const contact = {
-  // Kept both emails from portfolio.js, added phone from resume
-  email: ['contact.harshmehta@gmail.com','hershpmehta@gmail.com','hmehta7@wisc.edu'],
+  // Updated emails from user input
+  email: ['contact.harshmehta@gmail.com', 'hershpmehta@gmail.com', 'hmehta7@wisc.edu'],
   phone: '608-298-8733' // Added from resume
 }
 
