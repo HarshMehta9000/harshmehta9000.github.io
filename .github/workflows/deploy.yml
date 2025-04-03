@@ -18,28 +18,24 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4 # Use the latest major version
+        uses: actions/checkout@v4 
 
       - name: Set up Node.js ⚙️
-        uses: actions/setup-node@v4 # Use the latest major version
+        uses: actions/setup-node@v4
         with:
-          # Choose the Node.js version compatible with your react-scripts (v5 typically needs 14 or higher)
-          # Node 16 or 18 are good choices
           node-version: '18' 
-          cache: 'npm' # Use npm since you have package-lock.json
+          cache: 'npm' 
 
       - name: Install dependencies 🔧
-        run: npm install # Use npm install
+        run: npm install 
 
       - name: Build 🏗️
         # Use the build script from your package.json
         run: npm run build 
-        env: 
-          # If your build needs environment variables, define them here
-          # Example: CI: false # If needed to treat warnings as errors differently
+        # Removed the commented-out 'env:' section to simplify YAML
 
       - name: Deploy 🚀
-        uses: peaceiris/actions-gh-pages@v4 # Use the latest major version
+        uses: peaceiris/actions-gh-pages@v4 
         with:
           # The token provided by GitHub Actions automatically
           github_token: ${{ secrets.GITHUB_TOKEN }} 
