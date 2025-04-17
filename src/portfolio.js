@@ -1,4 +1,3 @@
-import { header, about, projects, skills, contact, education, experience } from './portfolio' // Assuming potential module usage
 
 const header = {
   homepage: 'https://harshmehta9000.github.io',
@@ -8,7 +7,6 @@ const header = {
 const about = {
   name: 'Harsh Mehta',
   role: 'Founder | Data Scientist | Analyst',
-  // Revised description for quality, tone, and prowess
   description:
     'As a Founder, Data Scientist, and Analyst, I apply deep expertise in data science, machine learning, and cloud technologies (AWS, Python, SQL) to uncover strategic insights and tackle complex business problems. My work has demonstrably improved operational efficiency (up to 35%), guided investment strategy (HP Tech Ventures), and increased revenue (by 10%) using predictive modeling and analytics. I enjoy building innovative solutions, including AI-driven platforms (Ensemble AI) and custom data tools, always aiming to translate technical capabilities into tangible business value through analytical rigor and creative problem solving.',
   resume: 'https://drive.google.com/file/d/13yGccHtQa6l8f4hNelCS9uMOmf4LEhKI/view?usp=sharing',
@@ -38,25 +36,21 @@ const education = [
   },
 ]
 
-// Updated Experience with revised descriptions and title
 const experience = [
   {
-    // Updated title for Ensemble AI
     name: 'Ensemble AI | Founder & AI Strategist',
-    // Revised description for flow and impact
     description:
       'Leading the development of Ensemble AI, an AI powered venue booking platform using agent based architecture (n8n, A2A). Focused on real time sync and secure payments, the platform has reduced average booking time by 40% and increased conversion rates by 35% via ML recommendations. Selected for the NSF I-Corps program to explore commercial scaling.',
     date: 'Feb 2025 - Present', // Current date is April 17, 2025 CDT
     location: 'Madison, WI / Remote',
     stack: [
-      'Founder', 'AI Strategy', 'Machine Learning', 'Entrepreneurship', 'Real-time Systems', 'Secure Payments', // Updated skill
+      'Founder', 'AI Strategy', 'Machine Learning', 'Entrepreneurship', 'Real-time Systems', 'Secure Payments',
       'Calendar Integration', 'Recommendation Systems', 'NSF I-Corps', 'n8n', 'A2A Protocol', 'Product Development', 'Python'
     ],
     // sourceCode: 'https://drive.google.com/file/d/1ws93y8MjzvBhUy26JfZQ59z70GfCiemQ/view'
   },
   {
     name: 'HP Tech Ventures | Business Analyst Extern',
-    // Revised description
     description:
       'Evaluated over 30 startups for HP Tech Ventures, identifying high potential investment targets by analyzing 50k+ data points with Python (Numpy/Pandas). Developed a Snowflake ETL framework that improved data management efficiency by 32%. Also utilized SQL, Databricks, and Excel automation for analysis.',
     date: 'Jul 2024 - Aug 2024',
@@ -68,7 +62,6 @@ const experience = [
   },
   {
     name: 'Beats by Dre | Business Analyst Branding Strategy Extern',
-    // Revised description
     description:
       'Spearheaded competitive analysis for the Beats Pill, informing a pricing strategy that increased sales volume by 10%. Gathered insights from Gen Z consumers (interviews, surveys) and analyzed 2k+ weekly reviews using Python NLP, boosting marketing engagement (+15%) and effectiveness (+11%). Presented data backed recommendations using Tableau/Power BI.',
     date: 'May 2024 - Jun 2024',
@@ -80,7 +73,6 @@ const experience = [
   },
   {
     name: 'Prayas Entertainment | Business Analyst',
-    // Revised description
     description:
       'Boosted operational efficiency by 35% and annual revenue by 10% at Prayas Entertainment through data analytics and predictive modeling. Developed effective financial forecasting models and implemented customer segmentation using data mining, increasing CLV by 15% and retention by 10%. Deployed Tableau/Power BI dashboards to enhance decision making.',
     date: 'Jan 2021 - Apr 2023',
@@ -92,7 +84,6 @@ const experience = [
   },
   {
     name: 'Indigo Events & Promotions | Data Analyst',
-    // Revised description
     description:
       'Directed data driven media strategies that improved customer satisfaction (+30%) and lead conversions (+21%). Optimized digital marketing campaigns using Google Analytics and BI tools, achieving a 40% higher CTR, 20% lower CPA, 25% conversion rate increase, and 10% ROI rise. Also implemented a data focused application that boosted customer engagement by 27%.',
     date: 'Mar 2017 - Mar 2020',
@@ -104,11 +95,9 @@ const experience = [
   },
 ]
 
-// Updated Projects with revised descriptions where applicable
 const projects = [
   {
     name: 'UW Transportation Services Campus Parking Efficiency Project',
-    // Revised description
     description:
       'Analyzed 11M+ parking transaction records using Python, SQL, and Snowflake to uncover usage patterns and weather impacts. Developed predictive models and interactive dashboards (Tableau/Power BI) that cut average parking search time by 27% and improved resource allocation.',
     stack: [
@@ -174,7 +163,6 @@ const projects = [
   },
 ]
 
-// Updated Skills list with new additions
 const skills = [
   // Programming & Analytics
   'Python', 'NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'SQL', 'R', 'Data Mining', 'Data Modeling', 'ETL', 'ELT', 'NLP', 'Statistical Analysis',
@@ -183,8 +171,8 @@ const skills = [
   // Cloud & Infrastructure
   'AWS', 'AWS S3', 'AWS Glue', 'AWS Redshift', 'AWS SageMaker', 'Azure', 'Snowflake', 'Databricks', 'Docker', 'Git', 'Github',
   // Business & Management
-  'Business Intelligence', 'Analytics', 'Project Management', 'Agile', 'SDLC', 'Business Analysis', 'Financial Forecasting', 'Market Research', 'Product Development', 'Founder', 'AI Strategy', // Added AI Strategy
-  'Product Analytics', 'Marketing Analytics', // Added Product & Marketing Analytics
+  'Business Intelligence', 'Analytics', 'Project Management', 'Agile', 'SDLC', 'Business Analysis', 'Financial Forecasting', 'Market Research', 'Product Development', 'Founder', 'AI Strategy',
+  'Product Analytics', 'Marketing Analytics',
   // AI / Agents / Protocols
   'AI', 'Machine Learning', 'Predictive Modeling', 'Recommendation Systems', 'n8n', 'A2A Protocol',
   // Web & Other
@@ -198,5 +186,5 @@ const contact = {
   phone: '608-298-8733'
 }
 
-// Export statement if using modules
+// This export statement makes the data available to other files in your React app
 export { header, about, projects, skills, contact, education, experience };
