@@ -1,21 +1,19 @@
+import { header, about, projects, skills, contact, education, experience } from './portfolio' // Assuming potential module usage
+
 const header = {
-  // homepage link remains the same unless you have a new one
   homepage: 'https://harshmehta9000.github.io',
   title: 'HM.',
 }
 
 const about = {
   name: 'Harsh Mehta',
-  // Updated role based on resume heading
-  role: 'MS in Information | Data Analytics | Machine Learning | Cloud', // Adjusted title
+  role: 'Founder | Data Scientist | Analyst',
+  // Revised description for quality, tone, and prowess
   description:
-    // Expanded description incorporating details from resume summary and education
-    'M.S. in Information Science candidate (GPA: 3.95/4.0) at University of Wisconsin-Madison, specializing in Data Analytics, Machine Learning, and Cloud Computing. Passionate about leveraging data-driven insights for strategic problem-solving. Recognized as a Chancellor\'s Scholar (2025) and inducted into the National Society of Leadership and Success. Combines analytical rigor with creativity, demonstrated through visualizing music data with Tableau and developing AI-powered platforms. Continuously enhancing skills in cloud technologies (AWS, Azure, Snowflake) and Data Engineering. Proven ability to deliver impactful results in Business Analyst roles, improving operational efficiency and driving revenue growth. Quick learner and collaborative team player with strong technical proficiency and a curiosity for innovative tech applications.',
-  // Resume link updated from user input
+    'As a Founder, Data Scientist, and Analyst, I apply deep expertise in data science, machine learning, and cloud technologies (AWS, Python, SQL) to uncover strategic insights and tackle complex business problems. My work has demonstrably improved operational efficiency (up to 35%), guided investment strategy (HP Tech Ventures), and increased revenue (by 10%) using predictive modeling and analytics. I enjoy building innovative solutions, including AI-driven platforms (Ensemble AI) and custom data tools, always aiming to translate technical capabilities into tangible business value through analytical rigor and creative problem solving.',
   resume: 'https://drive.google.com/file/d/13yGccHtQa6l8f4hNelCS9uMOmf4LEhKI/view?usp=sharing',
   social: {
-    // Links from original file, assuming they are correct
-    linkedin: 'https://www.linkedin.com/in/harshpmehta/', // also confirms linkedin
+    linkedin: 'https://www.linkedin.com/in/harshpmehta/',
     github: 'https://github.com/HarshMehta9000',
   },
 }
@@ -23,66 +21,82 @@ const about = {
 const education = [
   {
     name: 'University of Wisconsin-Madison',
-    description: 'M.S. in Information (Data, ML, Cloud)', // Updated description
-    date: 'Sept 2023 - May 2025', // Resume date
-    gpa: 'GPA: 3.95/4.0', // Resume GPA
-    // Added details from resume
+    description: 'M.S. in Information (Data, ML, Cloud Focus)',
+    date: 'Sept 2023 - May 2025', // Current date is April 17, 2025 CDT
+    gpa: 'GPA: 3.95/4.0',
     details: [
-      'Coursework: Data Mining, Analytics, Database Design, Data Visualization, Project Management, Big Data, ML, Cloud Computing, AWS, NLP, Data Ethics',
-      "Chancellor's Scholarship (2025): Awarded for academic excellence, leadership, and innovation (top 5% of applicants)",
-      'National Society of Leadership and Success: Inducted for leadership and academic achievement (top 8% nationwide)'
+      'Relevant Coursework: Data Mining, Analytics, Database Design, Visualization, Project Management, Big Data, ML, Cloud Computing, AWS, NLP, Data Ethics',
+      "Chancellor's Scholarship (2025): Awarded for academic excellence, leadership, innovation (top 5% applicants)",
+      'National Society of Leadership and Success: Inducted for leadership & academic achievement (top 8% nationwide)'
     ]
   },
   {
     name: 'University of Mumbai',
-    description: 'Bachelor of Management Studies (Business Analytics Major)', // Added major from resume context
-    date: 'Jun 2013 - Jul 2017', // Updated dates based on resume
-    gpa: 'GPA: 3.5/4.0', // Resume GPA
+    description: 'Bachelor of Management Studies (Business Analytics Major)',
+    date: 'Jun 2013 - Jul 2017',
+    gpa: 'GPA: 3.5/4.0',
   },
 ]
 
+// Updated Experience with revised descriptions and title
 const experience = [
-  // Experience entries updated with details and metrics from the resume
+  {
+    // Updated title for Ensemble AI
+    name: 'Ensemble AI | Founder & AI Strategist',
+    // Revised description for flow and impact
+    description:
+      'Leading the development of Ensemble AI, an AI powered venue booking platform using agent based architecture (n8n, A2A). Focused on real time sync and secure payments, the platform has reduced average booking time by 40% and increased conversion rates by 35% via ML recommendations. Selected for the NSF I-Corps program to explore commercial scaling.',
+    date: 'Feb 2025 - Present', // Current date is April 17, 2025 CDT
+    location: 'Madison, WI / Remote',
+    stack: [
+      'Founder', 'AI Strategy', 'Machine Learning', 'Entrepreneurship', 'Real-time Systems', 'Secure Payments', // Updated skill
+      'Calendar Integration', 'Recommendation Systems', 'NSF I-Corps', 'n8n', 'A2A Protocol', 'Product Development', 'Python'
+    ],
+    // sourceCode: 'https://drive.google.com/file/d/1ws93y8MjzvBhUy26JfZQ59z70GfCiemQ/view'
+  },
   {
     name: 'HP Tech Ventures | Business Analyst Extern',
+    // Revised description
     description:
-      'Assessed team structures and business models of over 30 startups to identify unique value propositions, informing targeted investment recommendations. Analyzed over 50,000 data points using Numpy and Pandas, enabling the selection of three high-potential startups. Engineered a small-scale ETL framework in Snowflake, improving Data Management efficiency by 32%. Constructed SQL queries in Oracle, reducing query execution time by 45%. Utilized Databricks for collaborative data workflows, reducing data exploration overhead by 20%. Automated data entry tasks using Excel macros, cutting manual effort by 25%.',
-    date: 'Jul 2024 - Aug 2024', // Resume date
-    location: 'Remote', // Added location
-    // Stack updated based on tools mentioned in resume descriptions
+      'Evaluated over 30 startups for HP Tech Ventures, identifying high potential investment targets by analyzing 50k+ data points with Python (Numpy/Pandas). Developed a Snowflake ETL framework that improved data management efficiency by 32%. Also utilized SQL, Databricks, and Excel automation for analysis.',
+    date: 'Jul 2024 - Aug 2024',
+    location: 'Remote',
     stack: [
       'Startup Analysis', 'Investment Recommendation', 'Python', 'Numpy', 'Pandas',
       'Snowflake', 'ETL', 'SQL', 'Oracle', 'Data Modeling', 'Databricks', 'Excel Macros', 'Data Management'
     ],
-  }, // Correct comma was already here
+  },
   {
     name: 'Beats by Dre | Business Analyst Branding Strategy Extern',
+    // Revised description
     description:
-      "Spearheaded competitive analysis of Beats Pill, informing a revised pricing strategy that increased sales volume by 10%. Gathered Gen Z consumer insights via 50+ interviews and 200+ surveys, leading to a 15% higher engagement in revamped marketing strategy. Evaluated 2,000+ customer reviews weekly using Python NLP, boosting targeted marketing effectiveness by 11%. Conducted competitor analysis using Tableau & Power BI, presenting data-backed recommendations to optimize product launch. Managed project communications using Microsoft Office suite.",
-    date: 'May 2024 - Jun 2024', // Resume date
-    location: 'Remote', // Added location
+      'Spearheaded competitive analysis for the Beats Pill, informing a pricing strategy that increased sales volume by 10%. Gathered insights from Gen Z consumers (interviews, surveys) and analyzed 2k+ weekly reviews using Python NLP, boosting marketing engagement (+15%) and effectiveness (+11%). Presented data backed recommendations using Tableau/Power BI.',
+    date: 'May 2024 - Jun 2024',
+    location: 'Remote',
     stack: [
-      'Competitive Analysis', 'Pricing Strategy', 'Market Research', 'Consumer Insights', 'Python', 'NLP', // Removed '(Gen Z)' for simplicity if needed
+      'Competitive Analysis', 'Pricing Strategy', 'Market Research', 'Consumer Insights', 'Python', 'NLP',
       'Data Visualization', 'Tableau', 'Power BI', 'Strategic Recommendations', 'Microsoft Office'
     ],
   },
   {
     name: 'Prayas Entertainment | Business Analyst',
+    // Revised description
     description:
-      'Championed initiatives enhancing operational efficiency by 35% using data analytics and predictive modeling. Developed financial forecasting model leading to a 10% increase in annual revenue. Implemented customer segmentation strategy using Data Mining, resulting in a 15% increase in CLV and 10% boost in retention. Managed Oracle databases for high-volume transaction data analysis and ETL workflows. Deployed visualization tools (Tableau, Power BI), enhancing decision-making efficiency by 50% and productivity by 30%. Systematized processes using Excel for Data Entry and documentation.',
-    date: 'Jan 2021 - Apr 2023', // Resume date
-    location: 'Mumbai, India', // Resume location
+      'Boosted operational efficiency by 35% and annual revenue by 10% at Prayas Entertainment through data analytics and predictive modeling. Developed effective financial forecasting models and implemented customer segmentation using data mining, increasing CLV by 15% and retention by 10%. Deployed Tableau/Power BI dashboards to enhance decision making.',
+    date: 'Jan 2021 - Apr 2023',
+    location: 'Mumbai, India',
     stack: [
       'Data Analytics', 'Predictive Modeling', 'Financial Forecasting', 'Customer Segmentation', 'Data Mining',
       'Oracle DB', 'ETL', 'SQL', 'Data Visualization', 'Tableau', 'Power BI', 'Excel'
     ],
   },
   {
-    name: 'Indigo Events & Promotions | Data Analyst', // Title updated based on resume
+    name: 'Indigo Events & Promotions | Data Analyst',
+    // Revised description
     description:
-      'Directed data-driven media strategies resulting in 30% elevated customer satisfaction and 21% higher lead conversions. Optimized digital marketing campaigns using analytics, achieving a 40% increase in CTR and a 20% decrease in CPA. Conducted market research shaping strategies that increased customer acquisition by 25% in 6 months. Utilized Google Analytics and BI tools, driving a 25% increase in conversion rate and 10% rise in ROI. Pioneered a data-driven application implementation, boosting customer engagement by 27% and conversion rates by 30%. Supervised Data Entry and Data Management operations.',
-    date: 'Mar 2017 - Mar 2020', // Resume date
-    location: 'Mumbai, India', // Resume location
+      'Directed data driven media strategies that improved customer satisfaction (+30%) and lead conversions (+21%). Optimized digital marketing campaigns using Google Analytics and BI tools, achieving a 40% higher CTR, 20% lower CPA, 25% conversion rate increase, and 10% ROI rise. Also implemented a data focused application that boosted customer engagement by 27%.',
+    date: 'Mar 2017 - Mar 2020',
+    location: 'Mumbai, India',
     stack: [
       'Media Strategy', 'Data Analysis', 'Digital Marketing', 'Ad Optimization', 'Market Research',
       'Google Analytics', 'BI Tools', 'Customer Engagement', 'Conversion Rate Optimization', 'Data Management'
@@ -90,98 +104,99 @@ const experience = [
   },
 ]
 
-// Projects section includes items from resume AND the new items provided
+// Updated Projects with revised descriptions where applicable
 const projects = [
   {
     name: 'UW Transportation Services Campus Parking Efficiency Project',
+    // Revised description
     description:
-      'Spearheaded analysis of 11M+ transaction records to enhance parking efficiency. Exposed key patterns and weather dependencies, optimizing resource allocation and reducing parking search time by 27%. Designed interactive dashboards and predictive models using visualization best practices, increasing stakeholder comprehension by 40%. Used Data Mining and clustering to group facilities, improving resource allocation efficiency by 18%. Correlated weather with parking events, elevating capacity planning accuracy by 22%. Leveraged Snowflake for storage, ETL, and management of transaction logs.',
+      'Analyzed 11M+ parking transaction records using Python, SQL, and Snowflake to uncover usage patterns and weather impacts. Developed predictive models and interactive dashboards (Tableau/Power BI) that cut average parking search time by 27% and improved resource allocation.',
     stack: [
       'Data Analysis', 'Python', 'SQL', 'Snowflake', 'ETL', 'Data Mining', 'Clustering',
-      'Predictive Modeling', 'Data Visualization', 'Tableau / Power BI' // Inferred tools based on skills & context
+      'Predictive Modeling', 'Data Visualization', 'Tableau / Power BI'
     ],
-    sourceCode: 'https://github.com/HarshMehta9000/LIS620Parking' // Link from user input
+    sourceCode: 'https://github.com/HarshMehta9000/LIS620Parking'
   },
   {
     name: 'MSBA Financial Group Cloud-Native Data Architecture Project',
     description:
-      'Designed an end-to-end AWS data pipeline to centralize financial data and enable ML predictions. Architected infrastructure using AWS S3 (Data Lake), Glue (ETL), and Redshift (Data Warehouse). Uncovered key financial indicators for bankruptcy risk via EDA. Deployed an ML model in SageMaker Canvas achieving 99.19% accuracy and 0.981 AUC-ROC. Formulated investment strategies based on predictions. Refined Data Management, reducing processing time by 63%.',
+      'Designed an end to end AWS data pipeline (S3, Glue, Redshift). Deployed an ML model via SageMaker Canvas (99.19% accuracy) for bankruptcy risk prediction, informing investment strategies and cutting data processing time by 63%.',
     stack: [
       'AWS', 'S3', 'AWS Glue', 'ETL', 'AWS Redshift', 'Data Warehousing', 'Data Pipeline',
-      'Machine Learning', 'SageMaker Canvas', 'Exploratory Data Analysis (EDA)', 'Financial Analysis', 'Risk Prediction'
+      'Machine Learning', 'SageMaker Canvas', 'EDA', 'Financial Analysis', 'Risk Prediction'
     ],
-    // sourceCode: 'YOUR_PROJECT_LINK_HERE' // No link provided by user
-  },
-  {
-    name: 'Ensemble AI-Powered Venue Booking Platform',
-    description:
-      'Conceptualized and built an AI platform for venue booking with real-time syncing and secure transactions. Reduced average booking time by 40% via intelligent matching algorithms. Integrated secure payments and calendar sync. Selected for NSF I-Corps program for commercial scaling. Used ML for optimized recommendations, increasing conversion rates by 35%.',
-    stack: [
-      'AI', 'Machine Learning', 'Entrepreneurship', 'Real-time Systems', 'Secure Payments', // Corrected 'Entrpeneur'
-      'Calendar Integration', 'Recommendation Systems', 'NSF I-Corps'
-    ],
-    sourceCode: 'https://drive.google.com/file/d/1ws93y8MjzvBhUy26JfZQ59z70GfCiemQ/view' // Link from user input
   },
   {
     name: 'Hard Drive Data Extraction Tool',
     description:
-      'Created a streamlined tool converting hard drive data to JSON with advanced analytics. Simplifies extraction for non-technical users, standardizes outputs for analytics, reduces processing time by 60%, and saves significantly on electricity, computing, and cloud costs. Demonstrates ability to identify market inefficiencies and develop user-friendly tech products.',
+      'Developed a user friendly tool (Python, JS, PostgreSQL) to extract hard drive data to JSON, standardizing output for analytics. Reduced processing time by 60% and significantly cut computing/cloud costs.',
     stack: [
-      'Data Extraction', 'JSON', 'Python', 'Javascript', 'PostgreSQL', // <--- COMMA ADDED HERE
+      'Data Extraction', 'JSON', 'Python', 'Javascript', 'PostgreSQL',
       'Data Management', 'Tool Development', 'Data Standardization', 'Process Optimization'
     ],
-    livePreview: 'https://melodic-kringle-9b3415.netlify.app/', // Link from user input
-    sourceCode: 'https://drive.google.com/file/d/1kFJuTdfmkWOjlnl02XlAT6nJLO8wHTPe/view', // Link from user input
+    livePreview: 'https://melodic-kringle-9b3415.netlify.app/',
+    sourceCode: 'https://drive.google.com/file/d/1kFJuTdfmkWOjlnl02XlAT6nJLO8wHTPe/view',
   },
   {
     name: 'Research: Job Posting Analytics on Twitter',
     description:
-      'Co-authoring a research paper for peer-reviewed publication. Analyzes 100,000+ job postings using data mining and NLP techniques to reveal insights into hiring trends across industries and regions.',
+      'Co authoring research analyzing 100k+ Twitter job postings using data mining and NLP to uncover hiring trends for peer reviewed publication.',
     stack: [
       'Research', 'Academic Writing', 'Data Mining', 'NLP', 'Twitter API', 'Job Market Analysis', 'Trend Analysis'
     ],
-    livePreview: 'https://docs.google.com/document/d/1dZR5oPDQ_W768aWHTl-36N0I0TuC41oIPV4Xl22kiD8/edit?tab=t.jemhm1prcbcn', // Link from user input
+    livePreview: 'https://docs.google.com/document/d/1dZR5oPDQ_W768aWHTl-36N0I0TuC41oIPV4Xl22kiD8/edit?tab=t.jemhm1prcbcn',
   },
   {
     name: 'Creative Application: MIDI to CSV Data Tool',
     description:
-      'Developed specialized code that transforms MIDI music files into analytical CSV datasets, capturing chord progressions, note structures, tempo variations, and instrumentation. This highlights technical capability applied to creative domains.',
+      'Created a Python tool to transform MIDI music files into analytical CSV datasets, capturing musical structures for analysis in a creative domain.',
     stack: [
       'MIDI Processing', 'Data Transformation', 'CSV', 'Music Information Retrieval', 'Python'
     ],
-    // No links provided for this one
   },
   {
-    name: 'Portfolio Highlights Summary', // Using project structure for this content
+    name: 'Graduate Studies: Learnings & Reflections',
     description:
-      'Technical portfolio features ML and text mining projects. Creative work includes production for campus music events and analytical platforms for film/music criticism. These demonstrate multidisciplinary thinking and translating complex concepts across domains.',
+      'Overview of key concepts, skills, and insights gained during the M.S. in Information program at UW Madison, focusing on Data Analytics, Machine Learning, and Cloud Computing.',
     stack: [
-      'Machine Learning', 'Text Mining', 'Music Production', 'Film Analysis', 'Music Analysis', 'Portfolio Development'
+      'Data Analysis', 'Machine Learning', 'Cloud Computing', 'Python', 'SQL', 'AWS', 'Project Management', 'Data Visualization', 'Critical Thinking'
     ],
-    livePreview: 'https://gentle-sorbet-624f58.netlify.app/', // Link from user input
-    sourceCode: 'https://superlative-meringue-134258.netlify.app/', // Link from user input
-    // Note: Add movie review platform link here if desired, might require ProjectContainer component changes
+    livePreview: 'https://gentle-sorbet-624f58.netlify.app/',
+  },
+  {
+    name: 'Live Audio/AV Tech Engineer - University of Wisconsin Madison',
+    description:
+      'Provided live audio engineering and AV technical support for various campus events and artist performances at the University of Wisconsin Madison.',
+    stack: [
+      'Live Audio', 'AV Technology', 'Event Support', 'Collaboration', 'Audio Engineering', 'Problem Solving', 'Project Coordination'
+    ],
+    livePreview: 'https://superlative-meringue-134258.netlify.app/',
   },
 ]
 
-// Skills updated and categorized based on resume
+// Updated Skills list with new additions
 const skills = [
   // Programming & Analytics
-  'Python', 'NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'SQL', 'R', 'Data Mining', 'Data Modeling', 'ETL', 'ELT',
+  'Python', 'NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'SQL', 'R', 'Data Mining', 'Data Modeling', 'ETL', 'ELT', 'NLP', 'Statistical Analysis',
   // Visualization & Reporting
   'Tableau (Certified)', 'Power BI', 'Data Visualization', 'Excel', 'Matplotlib', 'Seaborn', 'Plotly',
   // Cloud & Infrastructure
   'AWS', 'AWS S3', 'AWS Glue', 'AWS Redshift', 'AWS SageMaker', 'Azure', 'Snowflake', 'Databricks', 'Docker', 'Git', 'Github',
   // Business & Management
-  'Business Intelligence', 'Analytics', 'Statistical Analysis', 'Project Management', 'Agile', 'SDLC', 'Business Analysis',
-  // Other relevant skills from original portfolio (optional, verify relevance)
-  'HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB', 'Linux'
+  'Business Intelligence', 'Analytics', 'Project Management', 'Agile', 'SDLC', 'Business Analysis', 'Financial Forecasting', 'Market Research', 'Product Development', 'Founder', 'AI Strategy', // Added AI Strategy
+  'Product Analytics', 'Marketing Analytics', // Added Product & Marketing Analytics
+  // AI / Agents / Protocols
+  'AI', 'Machine Learning', 'Predictive Modeling', 'Recommendation Systems', 'n8n', 'A2A Protocol',
+  // Web & Other
+  'HTML', 'CSS', 'JavaScript', 'Node.js', 'MongoDB', 'Linux', 'API Development',
+  // AV / Live Production
+  'Live Audio', 'AV Technology', 'Audio Engineering'
 ]
 
 const contact = {
-  // Updated emails from user input
   email: ['contact.harshmehta@gmail.com', 'hershpmehta@gmail.com', 'hmehta7@wisc.edu'],
-  phone: '608-298-8733' // Added from resume
+  phone: '608-298-8733'
 }
 
-export { header, about, projects, skills, contact, education, experience }
+// Export statement if using modules
+export { header, about, projects, skills, contact, education, experience };
